@@ -13,7 +13,7 @@ import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
 @Story("Menu tests")
-public class MenuTests extends TestBase {
+public class MenuTests {
 
     @Test
     @DisplayName("Menu shown on main page on click")
@@ -28,54 +28,54 @@ public class MenuTests extends TestBase {
       });
     }
 
-    @Test
-    @DisplayName("Menu opens correct pages")
-    void menuOpensPages() {
-        step("Open main page", () -> {
-            open(TestData.getWebUrl());
-            $(".body").shouldHave(text("МЕНЮ"));
-        });
-
-      step("Open о Bogenhouse", () -> {
-          $("#Header_MenuIcon").click();
-          $("#Header_NavMenu_NavMenu_item__about").click();
-          $(".body").shouldHave(text("О Bogenhouse"));
-      });
-
-      step("Open Замоскворечье", () -> {
-          $("#Header_MenuIcon").click();
-          $("#Header_NavMenu_NavMenu_item__zamoskvorechie").click();
-          $(".body").shouldHave(text("Замоскворечье"));
-      });
-
-      step("Open Апартаменты", () -> {
-          $("#Header_MenuIcon").click();
-          $("#Header_NavMenu_NavMenu_item__aboutApartment").click();
-          $(".body").shouldHave(text("Об апартаментах"));
-      });
-
-      step("Open Пентхаусы", () -> {
-          $("#Header_MenuIcon").click();
-          $("#Header_NavMenu_NavMenu_item__penthouse").click();
-          $(".body").shouldHave(text("Подбор"));
-      });
-
-      step("Open Паркинг", () -> {
-          $("#Header_MenuIcon").click();
-          $("#Header_NavMenu_NavMenu_item__parkingAbout").click();
-          $(".body").shouldHave(text("Паркинг"));
-      });
-
-      step("Open Галерея", () -> {
-          $("#Header_MenuIcon").click();
-          $("#Header_NavMenu_NavMenu_item__gallery").click();
-          $(".body").shouldHave(text("Галерея"));
-      });
+//    @Test
+//    @DisplayName("Menu opens correct pages")
+//    void menuOpensPages() {
+//        step("Open main page", () -> {
+//            open(TestData.getWebUrl());
+//            $(".body").shouldHave(text("МЕНЮ"));
+//        });
 //
-      step("Open Контакты", () -> {
-          $("#Header_MenuIcon").click();
-          $("#Header_NavMenu_NavMenu_item__contacts").click();
-          $(".body").shouldHave(text("Москва"));
-      });
-    }
+//      step("Open о Bogenhouse", () -> {
+//          $("#Header_MenuIcon").click();
+//          $("#Header_NavMenu_NavMenu_item__about").click();
+//          $(".body").shouldHave(text("О Bogenhouse"));
+//      });
+//
+//      step("Open Замоскворечье", () -> {
+//          $("#Header_MenuIcon").click();
+//          $("#Header_NavMenu_NavMenu_item__zamoskvorechie").click();
+//          $(".body").shouldHave(text("Замоскворечье"));
+//      });
+//
+//      step("Open Апартаменты", () -> {
+//          $("#Header_MenuIcon").click();
+//          $("#Header_NavMenu_NavMenu_item__aboutApartment").click();
+//          $(".body").shouldHave(text("Об апартаментах"));
+//      });
+//
+//      step("Open Пентхаусы", () -> {
+//          $("#Header_MenuIcon").click();
+//          $("#Header_NavMenu_NavMenu_item__penthouse").click();
+//          $(".body").shouldHave(text("Подбор"));
+//      });
+//
+//      step("Open Паркинг", () -> {
+//          $("#Header_MenuIcon").click();
+//          $("#Header_NavMenu_NavMenu_item__parkingAbout").click();
+//          $(".body").shouldHave(text("Паркинг"));
+//      });
+//
+//      step("Open Галерея", () -> {
+//          $("#Header_MenuIcon").click();
+//          $("#Header_NavMenu_NavMenu_item__gallery").click();
+//          $(".body").shouldHave(text("Галерея"));
+//      });
+////
+//      step("Open Контакты", () -> {
+//          $("#Header_MenuIcon").click();
+//          $("#Header_NavMenu_NavMenu_item__contacts").click();
+//          $(".body").shouldHave(text("Москва"));
+//      });
+//    }
 }
