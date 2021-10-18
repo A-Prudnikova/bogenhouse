@@ -13,7 +13,7 @@ import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
 @Story("Menu tests")
-public class MenuTests {
+public class MenuTests extends TestBase {
 
     @Test
     @DisplayName("Menu shown on main page on click")
