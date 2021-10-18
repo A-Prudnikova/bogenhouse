@@ -5,7 +5,8 @@ import org.aeonbits.owner.Config;
 @Config.LoadPolicy(Config.LoadType.MERGE)
 @Config.Sources({
         "system:properties",
-        "classpath:cloud/autotests/config/testdata.properties"
+        "classpath:cloud/autotests/config/testdata.properties",
+
 })
 public interface TestDataConfig extends Config {
     @Key("web.url")
