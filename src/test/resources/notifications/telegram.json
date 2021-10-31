@@ -1,0 +1,46 @@
+{
+  "app": {
+    "bot": {
+      "token": "2085764313:AAGyCotFihNlubIEwWSRxvTN5DM7M8WTdjg",
+      "chat": "250703824",
+      "replyTo": ""
+    },
+    "base": {
+      "lang": "en",
+      "messenger": "telegram",
+      "allureFolder": "C:/Users/GameMax/AppData/Local/Temp/7455166022513660510/allure-report/",
+      "allureLinkPath": "allure",
+      "chart": true,
+      "chartName": "",
+      "project": ""
+    },
+    "mail": {
+      "host": "",
+      "port": "",
+      "username": "",
+      "password": "",
+      "enableSSL": false,
+      "from": "",
+      "recipient": ""
+    },
+    "mattermost": {
+      "url": ""
+    },
+    "proxy": {
+      "host": "",
+      "port": 0,
+      "username": "",
+      "password": ""
+    },
+    "skype": {
+      "appId": "",
+      "appSecret": "",
+      "serviceUrl": "",
+      "conversationId": "",
+      "botId": "",
+      "botName": ""
+    }
+  }
+}
+
+
