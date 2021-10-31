@@ -24,7 +24,8 @@ public class TestBase {
         attachPageSource();
         attachAsText("Browser console logs", getConsoleLogs());
         closeWebDriver();
-   if (isVideoOn()) attachVideo(sessionId);
+  // if (isVideoOn())
+       attachVideo(sessionId);
 
 
     }
